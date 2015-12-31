@@ -33,6 +33,12 @@ namespace LifeOS.UITests
 
 			Assert.IsTrue (results.Any ());
 		}
+		[Test]
+		public void Repl()
+		{
+			app.WaitForElement (c => c.Marked ("Welcome to Xamarin Forms!"));
+			app.Repl ();
+		}
 	}
 }
 
